@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Postres de Claudia - Pastelería Artística</title>
+
+    <!-- Meta tags para SEO y redes sociales -->
+    <meta name="description"
+        content="Pastelería artesanal Postres de Claudia. Endulzamos tus momentos especiales con pasteles y dulces artesanales hechos con amor.">
+    <meta name="keywords"
+        content="pastelería, postres, pasteles, dulces, repostería, Madrid, Claudia, croissants, tarta chocolate">
+    <meta name="author" content="Postres de Claudia">
+    <meta property="og:title" content="Postres de Claudia - Pastelería Artística">
+    <meta property="og:description" content="Endulzamos tus momentos especiales con pasteles artesanales">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1535141192574-5d4897c12636">
+    <meta property="og:url" content="https://postresdeclaudia.com">
+
+
+    <!-- Fuentes e iconos -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@300;400;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Favicon (simulado con emoji) -->
+    <link rel="icon"
+        href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🎂</text></svg>">
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <a href="./index.html" class="logo">
+            <div class="logo-icon">
+                <i class="fas fa-birthday-cake"></i>
+            </div>
+            <span>Dulce Fantasía Bakery</span>
+        </a>
+
+        <button class="mobile-menu-btn" aria-label="Abrir menú">
+            <i class="fas fa-bars"></i>
+        </button>
+
+        <nav aria-label="Navegación principal">
+            <ul class="nav-list" role="menubar">
+                <li role="none">
+                    <a href="./index.html" class="nav-link active" role="menuitem" aria-current="page">Inicio</a>
+                </li>
+                <li role="none">
+                    <a href="./index.html#especialidades" class="nav-link" role="menuitem">Especialidades</a>
+                </li>
+                <li role="none">
+                    <a href="./index.html#shop" class="nav-link" role="menuitem">Shop</a>
+                </li>
+                <li role="none">
+                    <a href="./index.html#nosotros" class="nav-link" role="menuitem">Nosotros</a>
+                </li>
+                <li role="none">
+                    <a href="./index.html#contacto" class="nav-link" role="menuitem">Contacto</a>
+                </li>
+                <li role="none">
+                    <a href="tel:+123456789" class="btn btn-primary btn-small" role="menuitem">
+                        <i class="fas fa-shopping-cart"></i>
+                        Carrito
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Informacion -->
+    <section class="legal">
+        <h2 class="section-legal"><i class="fas fa-question-circle"></i> Preguntas Frecuentes <i
+                class="fas fa-question-circle"></i></h2>
+        <p class="faq-intro">
+            A continuación se encuentran las preguntas más frecuentes, puede encontrar la respuesta por sí mismo.
+        </p>
+
+        <div class="faq-accordion">
+            <!-- Pregunta 1 -->
+            <div class="faq-item">
+                <div class="faq-question">
+                    <h3><i class="fa-solid fa-check">&nbsp</i>¿Cuál es el horario de pedidos?</h3>
+                    <span class="faq-icon"><i class="fas fa-chevron-down"></i></span>
+                </div>
+                <div class="faq-answer">
+                    <p class="faq-answer">Nuestro horario de atención para recibir pedidos es de lunes a domingo de 8:00 am a 8:00 pm. Los
+                        pedidos se realizan con un mínimo de 2 horas de anticipación.</p>
+                </div>
+            </div>
+
+            <!-- Pregunta 2 -->
+            <div class="faq-item">
+                <div class="faq-question">
+                    <h3><i class="fa-solid fa-check">&nbsp</i>¿Cómo se hace un pedido por la web?</h3>
+                    <span class="faq-icon"><i class="fas fa-chevron-down"></i></span>
+                </div>
+                <div class="faq-answer">
+                    <p>Para hacer un pedido por nuestra web:</p>
+                    <ol>
+                        <li>Selecciona los productos que deseas en nuestra tienda online.</li>
+                        <li>Agrega los productos al carrito de compras.</li>
+                        <li>Selecciona la opción de delivery o recojo en tienda.</li>
+                        <li>Completa tus datos de contacto y entrega.</li>
+                        <li>Selecciona tu método de pago preferido.</li>
+                        <li>Confirma tu pedido y recibirás un correo de confirmación.</li>
+                    </ol>
+                </div>
+            </div>
+
+            <!-- Pregunta 3 -->
+            <div class="faq-item">
+                <div class="faq-question">
+                    <h3><i class="fa-solid fa-check">&nbsp</i>¿Cuáles son los métodos de pago?</h3>
+                    <span class="faq-icon"><i class="fas fa-chevron-down"></i></span>
+                </div>
+                <div class="faq-answer">
+                    <p>Aceptamos los siguientes métodos de pago:</p>
+                    <ul>
+                        <li><strong>Tarjetas de crédito/débito:</strong> Visa, Mastercard, American Express.</li>
+                        <li><strong>Pago electrónico:</strong> Yape, Plin.</li>
+                        <li><strong>Transferencia bancaria.</strong></li>
+                        <li><strong>Efectivo:</strong> Solo para recojo en tienda.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Pregunta 4 -->
+            <div class="faq-item">
+                <div class="faq-question">
+                    <h3><i class="fa-solid fa-check">&nbsp</i>¿Cuál es el horario de delivery?</h3>
+                    <span class="faq-icon"><i class="fas fa-chevron-down"></i></span>
+                </div>
+                <div class="faq-answer">
+                    <p>El servicio de delivery está disponible de lunes a domingo de 9:00 am a 9:00 pm. Realizamos
+                        entregas en zonas específicas de la ciudad. El costo de delivery varía según la zona.</p>
+                </div>
+            </div>
+
+            <!-- Pregunta 5 -->
+            <div class="faq-item">
+                <div class="faq-question">
+                    <h3><i class="fa-solid fa-check">&nbsp</i>¿Qué pasa si no se encuentra la persona que recibirá el pedido?</h3>
+                    <span class="faq-icon"><i class="fas fa-chevron-down"></i></span>
+                </div>
+                <div class="faq-answer">
+                    <p>Si al momento de la entrega no hay nadie en el domicilio:</p>
+                    <ul>
+                        <li>Intentaremos contactarte por teléfono.</li>
+                        <li>Podrás reprogramar la entrega con un costo adicional.</li>
+                        <li>Si no logramos coordinar, el pedido se cancelará <strong>sin reembolso</strong> debido a la
+                            naturaleza perecedera de nuestros productos.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Pregunta 6 -->
+            <div class="faq-item">
+                <div class="faq-question">
+                    <h3><i class="fa-solid fa-check">&nbsp</i>¿Puedo anular mi compra?</h3>
+                    <span class="faq-icon"><i class="fas fa-chevron-down"></i></span>
+                </div>
+                <div class="faq-answer">
+                    <p>Sí, puedes anular tu compra bajo las siguientes condiciones:</p>
+                    <ul>
+                        <li><strong>Con 24 horas de anticipación:</strong> Reembolso completo.</li>
+                        <li><strong>El mismo día:</strong> Solo si el producto no ha iniciado su preparación.</li>
+                        <li><strong>Productos personalizados:</strong> No son anulables.</li>
+                    </ul>
+                    <p>Comunícate con nosotros por teléfono o WhatsApp para gestionar la anulación.</p>
+                </div>
+            </div>
+
+            <!-- Pregunta 7 -->
+            <div class="faq-item">
+                <div class="faq-question">
+                    <h3><i class="fa-solid fa-check">&nbsp</i>¿Realizan devoluciones?</h3>
+                    <span class="faq-icon"><i class="fas fa-chevron-down"></i></span>
+                </div>
+                <div class="faq-answer">
+                    <p>Debido a que nuestros productos son perecederos, las devoluciones solo proceden en los siguientes
+                        casos:</p>
+                    <ul>
+                        <li>Error en el producto entregado (ej: sabor diferente al solicitado).</li>
+                        <li>Producto en mal estado por error en la preparación.</li>
+                        <li>La solicitud debe hacerse dentro de las 2 horas posteriores a la entrega.</li>
+                    </ul>
+                    <p>No aceptamos devoluciones por cambio de opinión o preferencia.</p>
+                </div>
+            </div>
+
+            <!-- Pregunta 8 -->
+            <div class="faq-item">
+                <div class="faq-question">
+                    <h3><i class="fa-solid fa-check">&nbsp</i>¿Qué debo presentar al momento de recoger el pedido?</h3>
+                    <span class="faq-icon"><i class="fas fa-chevron-down"></i></span>
+                </div>
+                <div class="faq-answer">
+                    <p>Para recoger tu pedido en tienda debes presentar:</p>
+                    <ul>
+                        <li>Comprobante de compra (físico o digital).</li>
+                        <li>Documento de identidad (DNI o carnet).</li>
+                        <li>Número de pedido (que recibiste por correo).</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Pregunta 9 -->
+            <div class="faq-item">
+                <div class="faq-question">
+                    <h3><i class="fa-solid fa-check">&nbsp</i>¿Puede otra persona recoger mi pedido?</h3>
+                    <span class="faq-icon"><i class="fas fa-chevron-down"></i></span>
+                </div>
+                <div class="faq-answer">
+                    <p>Sí, otra persona puede recoger tu pedido presentando:</p>
+                    <ul>
+                        <li>Comprobante de compra (físico o digital).</li>
+                        <li>Documento de identidad de la persona que recoge.</li>
+                        <li>Autorización firmada por el titular del pedido (puede ser enviada por WhatsApp).</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Pregunta 10 -->
+            <div class="faq-item">
+                <div class="faq-question">
+                    <h3><i class="fa-solid fa-check">&nbsp</i>¿De qué tamaño tiene que ser la dedicatoria?</h3>
+                    <span class="faq-icon"><i class="fas fa-chevron-down"></i></span>
+                </div>
+                <div class="faq-answer">
+                    <p>Las dedicatorias en nuestros productos tienen las siguientes limitaciones:</p>
+                    <ul>
+                        <li><strong>Máximo de caracteres:</strong> 50 caracteres (incluyendo espacios).</li>
+                        <li><strong>Formato:</strong> Letras mayúsculas o minúsculas, sin símbolos especiales.</li>
+                        <li><strong>Revisión:</strong> Te enviaremos una prueba de la dedicatoria antes de la
+                            preparación final.</li>
+                    </ul>
+                    <p>Para mensajes más largos, consulta por nuestras opciones de tarjetas personalizadas.</p>
+                </div>
+            </div>
+
+            <!-- Pregunta 11 -->
+            <div class="faq-item">
+                <div class="faq-question">
+                    <h3><i class="fa-solid fa-check">&nbsp</i>¿Cómo puedo presentar un reclamo?</h3>
+                    <span class="faq-icon"><i class="fas fa-chevron-down"></i></span>
+                </div>
+                <div class="faq-answer">
+                    <p>Puedes presentar un reclamo a través de los siguientes canales:</p>
+                    <ul>
+                        <li><strong>Libro de Reclamaciones Virtual:</strong> Disponible en nuestro sitio web.</li>
+                        <li><strong>WhatsApp:</strong> +51 XXX XXX XXX</li>
+                        <li><strong>Correo electrónico:</strong> reclamos@tupasteleria.com</li>
+                        <li><strong>Teléfono:</strong> (01) XXX-XXXX</li>
+                        <li><strong>Presencial:</strong> En nuestra tienda principal.</li>
+                    </ul>
+                    <p>Te responderemos en un plazo máximo de 15 días hábiles.</p>
+                </div>
+            </div>
+        </div>
+
+
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <!-- Columna 1: Logo y descripción -->
+            <div class="footer-column logo-column">
+                <a href="#inicio" class="footer-logo">
+                    <div class="logo-icon">
+                        <i class="fas fa-birthday-cake"></i>
+                    </div>
+                    <span>Dulce Fantasía Bakery</span>
+                </a>
+                <p class="footer-description">
+                    Pastelería artística desde 2020. Creamos dulzura con amor para hacer de tus momentos algo
+                    inolvidable.
+                </p>
+                <div class="social-links">
+                    <a href="https://www.instagram.com/dulcefantasiaoficial/" class="social-link"
+                        aria-label="Síguenos en Instagram">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="https://www.facebook.com/DulceFantasiaOficialCakeShop" class="social-link"
+                        aria-label="Síguenos en Facebook">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="https://www.pinterest.com/dulcefantasiaoficial/" class="social-link"
+                        aria-label="Síguenos en Pinterest">
+                        <i class="fab fa-pinterest-p"></i>
+                    </a>
+                    <a href="https://sites.google.com/view/dulcefantasiacakeshop" class="social-link"
+                        aria-label="Visita nuestra página web">
+                        <i class="fab fa-google"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Columna 2: Legalidad -->
+            <div class="footer-column">
+                <h4 class="footer-title">Información</h4>
+                <a class="footer-legal" href="./terminos y condiciones.html">Términos y condiciones</a>
+                <a class="footer-legal" href="./politicas de privacidad.html">Políticas de privacidad</a>
+                <a class="footer-legal" href="./envios y devoluciones.html">Envíos y devoluciones</a>
+                <a class="footer-legal" href="./preguntas frecuentes.html">Preguntas frecuentes</a>
+            </div>
+
+            <!-- Columna 3: Horario -->
+            <div class="footer-column">
+                <h4 class="footer-title">Horario</h4>
+                <ul class="footer-schedule">
+                    <li>
+                        <span class="day">Lun - Vie:</span>
+                        <span class="time">8:00 - 20:00</span>
+                    </li>
+                    <li>
+                        <span class="day">Sábado:</span>
+                        <span class="time">9:00 - 20:00</span>
+                    </li>
+                    <li>
+                        <span class="day">Domingo:</span>
+                        <span class="time">9:00 - 14:00</span>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Columna 4: WhatsApp -->
+            <div class="footer-column">
+                <h4 class="footer-title">Mantente al día</h4>
+                <p class="newsletter-text">Únete a nuestra comunidad de WhatsApp para recibir novedades y ofertas
+                    especiales.</p>
+                <a href="https://wa.me/34123456789" target="_blank" class="btn btn-whatsapp"
+                    aria-label="Contáctanos por WhatsApp">
+                    <i class="fab fa-whatsapp"></i>
+                    ÚNETE AQUÍ
+                </a>
+            </div>
+        </div>
+
+        <!-- Línea separadora y copyright -->
+        <div class="footer-bottom">
+            <div class="footer-bottom-container">
+                <p class="copyright">
+                    © 2024 Postres de Claudia. Todos los derechos reservados.
+                </p>
+            </div>
+        </div>
+    </footer>
+    <script src="./javascript.js"></script>
+</body>
+
+</html>
