@@ -377,7 +377,7 @@ class PasteleriaApp {
     }
 }
 
-
+// ===== ABRIR PREGUNTAS FRECUENTES =====
 document.addEventListener('DOMContentLoaded', function () {
     // Seleccionar todos los elementos de pregunta
     const faqItems = document.querySelectorAll('.faq-item');
