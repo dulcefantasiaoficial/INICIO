@@ -32,32 +32,23 @@
             </div>
             <span>Dulce Fantasía Bakery</span>
         </a>
-        
+
         <button class="mobile-menu-btn" aria-label="Abrir menú">
             <i class="fas fa-bars"></i>
         </button>
-        
+
         <nav aria-label="Navegación principal">
             <ul class="nav-list" role="menubar">
-                <li role="none">
-                    <a href="./index.html" class="nav-link active" role="menuitem" aria-current="page">Inicio</a>
-                </li>
-                <li role="none">
-                    <a href="./index.html#especialidades" class="nav-link" role="menuitem">Especialidades</a>
-                </li>
-                <li role="none">
-                    <a href="./index.html#shop" class="nav-link" role="menuitem">Shop</a>
-                </li>
-                <li role="none">
-                    <a href="./index.html#nosotros" class="nav-link" role="menuitem">Nosotros</a>
-                </li>
-                <li role="none">
-                    <a href="./index.html#contacto" class="nav-link" role="menuitem">Contacto</a>
-                </li>
-                <li role="none">
-                    <a href="tel:+123456789" class="btn btn-primary btn-small" role="menuitem">
+                <li><a href="#inicio" class="nav-link active" role="menuitem" id="homeLink">Inicio</a></li>
+                <li><a href="#shop" class="nav-link" role="menuitem" id="shopLink">Tienda</a></li>
+                <li><a href="#especialidades" class="nav-link" role="menuitem" id="especialidadesLink">Especialidades</a></li>
+                <li><a href="#nosotros" class="nav-link" role="menuitem" id="nosotrosLink">Nosotros</a></li>
+                <li><a href="#contacto" class="nav-link" role="menuitem" id="contactoLink">Contacto</a></li>
+                <li>
+                    <a href="#" class="btn btn-primary btn-small cart-btn" id="cartToggleBtn" role="menuitem">
                         <i class="fas fa-shopping-cart"></i>
                         Carrito
+                        <span class="cart-badge" id="cartBadge">0</span>
                     </a>
                 </li>
             </ul>
@@ -140,85 +131,50 @@
             </div>
         </div>
     </section>
-
-    <!-- Footer -->
+<!-- Footer -->
     <footer class="footer">
         <div class="footer-container">
-            <!-- Columna 1: Logo y descripción -->
             <div class="footer-column logo-column">
-                <a href="#inicio" class="footer-logo">
-                    <div class="logo-icon">
-                        <i class="fas fa-birthday-cake"></i>
-                    </div>
+                <a href="#inicio" class="footer-logo" id="footerHomeLogo">
+                    <div class="logo-icon"><i class="fas fa-birthday-cake"></i></div>
                     <span>Dulce Fantasía Bakery</span>
                 </a>
-                <p class="footer-description">
-                    Pastelería artística desde 2020. Creamos dulzura con amor para hacer de tus momentos algo inolvidable.
-                </p>
+                <p class="footer-description">Pastelería artística desde 2020. Creamos dulzura con amor para hacer de tus momentos algo inolvidable. Cada creación es única y especial.</p>
                 <div class="social-links">
-                    <a href="https://www.instagram.com/dulcefantasiaoficial/" class="social-link" aria-label="Síguenos en Instagram">
-                        <i class="fab fa-instagram"></i>
-                    </a>
-                    <a href="https://www.facebook.com/DulceFantasiaOficialCakeShop" class="social-link" aria-label="Síguenos en Facebook">
-                        <i class="fab fa-facebook-f"></i>
-                    </a>
-                    <a href="https://www.pinterest.com/dulcefantasiaoficial/" class="social-link" aria-label="Síguenos en Pinterest">
-                        <i class="fab fa-pinterest-p"></i>
-                    </a>
-                    <a href="https://sites.google.com/view/dulcefantasiacakeshop" class="social-link" aria-label="Visita nuestra página web">
-                        <i class="fab fa-google"></i>
-                    </a>
+                    <a href="https://www.instagram.com/dulcefantasiaoficial/" class="social-link" target="_blank" aria-label="Síguenos en Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.facebook.com/DulceFantasiaOficialCakeShop" class="social-link" target="_blank" aria-label="Síguenos en Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://www.pinterest.com/dulcefantasiaoficial/" class="social-link" target="_blank" aria-label="Síguenos en Pinterest"><i class="fab fa-pinterest-p"></i></a>
+                    <a href="https://dulcefantasiaoficial.github.io/home/" class="social-link" target="_blank" aria-label="Visita nuestra página web"><i class="fab fa-google"></i></a>
                 </div>
             </div>
-            
-            <!-- Columna 2: Legalidad -->
             <div class="footer-column">
                 <h4 class="footer-title">Información</h4>
-                <a class="footer-legal" href="./terminos y condiciones.html">Términos y condiciones</a>
-                <a class="footer-legal" href="./politicas de privacidad.html">Políticas de privacidad</a>
-                <a class="footer-legal" href="./envios y devoluciones.html">Envíos y devoluciones</a>
-                <a class="footer-legal" href="./preguntas frecuentes.html">Preguntas frecuentes</a>
+                <a class="footer-legal" href="./terminos-y-condiciones" target="_blank">Términos y condiciones</a>
+                <a class="footer-legal" href="./politicas-de-privacidad" target="_blank">Políticas de privacidad</a>
+                <a class="footer-legal" href="./envios-y-devoluciones" target="_blank">Envíos y devoluciones</a>                
+                <a class="footer-legal" href="./preguntas-frecuentes" target="_blank">Preguntas frecuentes</a>
             </div>
-
-            <!-- Columna 3: Horario -->
             <div class="footer-column">
                 <h4 class="footer-title">Horario</h4>
                 <ul class="footer-schedule">
-                    <li>
-                        <span class="day">Lun - Vie:</span>
-                        <span class="time">8:00 - 20:00</span>
-                    </li>
-                    <li>
-                        <span class="day">Sábado:</span>
-                        <span class="time">9:00 - 20:00</span>
-                    </li>
-                    <li>
-                        <span class="day">Domingo:</span>
-                        <span class="time">9:00 - 14:00</span>
-                    </li>
+                    <li><span class="day">Lun - Vie:</span><span class="time">8:00-20:00</span></li>
+                    <li><span class="day">Sábado:</span><span class="time">9:00-20:00</span></li>
+                    <li><span class="day">Domingo:</span><span class="time">9:00-14:00</span></li>
                 </ul>
             </div>
-            
-            <!-- Columna 4: WhatsApp -->
             <div class="footer-column">
                 <h4 class="footer-title">Mantente al día</h4>
-                <p class="newsletter-text">Únete a nuestra comunidad de WhatsApp para recibir novedades y ofertas especiales.</p>
-                <a href="https://wa.me/34123456789" target="_blank" class="btn btn-whatsapp" aria-label="Contáctanos por WhatsApp">
-                    <i class="fab fa-whatsapp"></i>
-                    ÚNETE AQUÍ
-                </a>
+                <p class="footer-description">Únete a nuestra comunidad de WhatsApp para recibir novedades y ofertas especiales.</p>
+                <a href="https://wa.me/51987645268" target="_blank" class="btn btn-primary btn-small btn-wts" style="width: 100%;"><i class="fab fa-whatsapp"></i>ÚNETE AQUÍ</a>
             </div>
         </div>
-        
-        <!-- Línea separadora y copyright -->
         <div class="footer-bottom">
             <div class="footer-bottom-container">
-                <p class="copyright">
-                    © 2024 Postres de Claudia. Todos los derechos reservados.
-                </p>
+                <p class="copyright">© 2024 Dulce Fantasía Bakery. Todos los derechos reservados.</p>
+                <p class="copyright">Hecho con <i class="fas fa-heart" style="color: var(--primary-pink);"></i> en Lima - Perú</p>
             </div>
         </div>
-    </footer>
+    </footer>   
     <script src="./javascript.js"></script>
 </body>
 </html>
