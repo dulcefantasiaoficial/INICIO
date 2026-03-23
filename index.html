@@ -1,0 +1,611 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes">
+    <title>Dulce Fantasía Cake Shop - Pastelería Artística</title>
+
+    <!-- Meta tags para SEO y redes sociales -->
+    <meta name="description"
+        content="Pastelería artística Dulce Fantasía Cake Shop. Endulzamos tus momentos especiales con pasteles y dulces hechos con amor.">
+    <meta name="keywords"
+        content="pastelería, postres, pasteles, dulces, repostería, Lima, tortas personalizadas, tortas artísticas">
+    <meta name="author" content="Dulce Fantasía Cake Shop">
+    <meta property="og:title" content="Dulce Fantasía Cake Shop - Pastelería Artística">
+    <meta property="og:description" content="Endulzamos tus momentos especiales con pasteles artísticos">
+    <meta property="og:image"
+        content="https://lh3.googleusercontent.com/pw/AP1GczOPQ8wvSCAdvC0XlFugAfTWj9cP0RGu3aBvkqaTy8AruFPD9RZhnj-T0uPqUb2wQl8PtSeHQjyGareJ5QPpGB-SG7rIVY1wrIfa9MsbuJRQgp5JnXnch5Xd7UP68RjlrZhDmAvB6j6DL5QEwZ8a4_HS=w976-h467-s-no-gm">
+    <meta name="google-site-verification" content="fLLuMIWEzAU2Dt9osZr3_Q3uOR938yy-k0lmjZX8oHs" />
+    <!-- Fuentes e iconos -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Favicon -->
+    <link rel="icon"
+        href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🎂</text></svg>">
+     <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <a href="#inicio" class="logo" id="homeLogo">
+            <div class="logo-icon">
+                <i class="fas fa-birthday-cake"></i>
+            </div>
+            <span>Dulce Fantasía Bakery</span>
+        </a>
+        <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Abrir menú">
+            <i class="fas fa-bars"></i>
+        </button>
+        <nav aria-label="Navegación principal" id="mainNav">
+            <ul class="nav-list" role="menubar">
+                <li><a href="#inicio" class="nav-link active" role="menuitem" id="homeLink">Inicio</a></li>
+                <li><a href="#shop" class="nav-link" role="menuitem" id="shopLink">Tienda</a></li>
+                <li><a href="#especialidades" class="nav-link" role="menuitem" id="especialidadesLink">Especialidades</a></li>
+                <li><a href="#nosotros" class="nav-link" role="menuitem" id="nosotrosLink">Nosotros</a></li>
+                <li><a href="#contacto" class="nav-link" role="menuitem" id="contactoLink">Contacto</a></li>
+                <li>
+                    <a href="#" class="btn btn-primary btn-small cart-btn" id="cartToggleBtn" role="menuitem">
+                        <i class="fas fa-shopping-cart"></i>
+                        Carrito
+                        <span class="cart-badge" id="cartBadge">0</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- CONTENIDO 1 (Página Principal) -->
+    <div id="content-001" class="content-001">
+        <!-- Hero Section -->
+        <section class="hero" id="inicio">
+            <div class="hero-carrusel"></div>
+            <div class="hero-overlay"></div>
+            <div class="hero-content">
+                <h1>Endulzamos <span>tus momentos</span> más especiales</h1>
+                <p>Creamos pasteles y dulces artesanales con amor, utilizando los ingredientes más frescos para hacer de
+                    cada celebración un momento inolvidable.</p>
+                <div class="hero-btns">
+                    <a href="#shop" class="btn btn-primary"><i class="fas fa-birthday-cake"></i>Los más pedidos</a>
+                    <a href="#contacto" class="btn btn-secondary">Hacer Pedido</a>
+                </div>
+            </div>
+            <div class="carrusel-indicators"></div>
+        </section>
+
+        <!-- SHOP SECTION (CARRUSELES) -->
+        <section class="shop-section" id="shop">
+            <div class="shop-container">
+                <span class="section-tag fade-in">Compra en línea</span>
+                <h2 class="section-title fade-in">Nuestra Tienda Online</h2>
+                <p class="section-desc fade-in">Explora nuestras categorías y descubre los productos más populares. Haz tu pedido
+                    online y recógelo en nuestra pastelería.</p>
+
+                <!-- CARRUSEL 1 - DÍA DE LA MUJER -->
+                <div class="carousel-wrapper fade-in">
+                    <div class="carousel-header">
+                        <h3 class="carousel-title"><i class="fas fa-heart"></i> DÍA DE LA MUJER</h3>
+                    </div>
+                    <div class="carousel-container" data-carousel="1">
+                        <button class="nav-btn prev-btn" aria-label="Anterior"><i class="fas fa-chevron-left"></i></button>
+                        <div class="carousel-track-container">
+                            <ul class="carousel-track" id="carousel-variable"></ul>
+                        </div>
+                        <button class="nav-btn next-btn" aria-label="Siguiente"><i class="fas fa-chevron-right"></i></button>
+                    </div>
+                </div>
+
+                <!-- CARRUSEL 2 - PERSONALIZADAS -->
+                <div class="carousel-wrapper fade-in">
+                    <div class="carousel-header">
+                        <h3 class="carousel-title"><i class="fas fa-cake"></i> Personalizadas</h3>
+                    </div>
+                    <div class="carousel-container" data-carousel="2">
+                        <button class="nav-btn prev-btn" aria-label="Anterior"><i class="fas fa-chevron-left"></i></button>
+                        <div class="carousel-track-container">
+                            <ul class="carousel-track" id="carousel-personalizadas"></ul>
+                        </div>
+                        <button class="nav-btn next-btn" aria-label="Siguiente"><i class="fas fa-chevron-right"></i></button>
+                    </div>
+                </div>
+
+                <!-- BOTÓN VER MÁS Y WHATSAPP -->
+                <div class="shop-footer">
+                    <a href="#" class="btn btn-primary btn-small" id="masProductos"><i class="fas fa-shopping-cart"></i>Más
+                        productos...</a>
+                    <div class="shop-cta">
+                        <p class="section-desc">¿No encuentras lo que buscas? ¿Quieres un producto personalizado?
+                            <br>Contáctanos y crearemos algo especial para ti.
+                        </p>
+                        <a href="https://wa.me/c/51987645268" target="_blank" class="btn btn-primary btn-small btn-wts"><i
+                                class="fab fa-whatsapp"></i>Consultar por WhatsApp</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Especialidades -->
+        <section class="specialties" id="especialidades">
+            <div class="shop-container">
+                <span class="section-tag fade-in">Lo más pedido</span>
+                <h2 class="section-title fade-in">Nuestras Especialidades</h2>
+                <p class="section-desc fade-in">Cada creación es elaborada a mano con ingredientes seleccionados y todo el amor de
+                    nuestros maestros pasteleros.</p>
+                <div class="specialties-grid">
+                    <article class="card stagger-item">
+                        <img src="https://lh3.googleusercontent.com/pw/AP1GczMGgToAiSTXef5_ISw-lNr7nQaUwJDH-FZEyac0eIKgiCwAnhFDWxYJF8Ow_jaOi3zHPSOSH81jQzWZdbwsskkAsklMuCrjTeMFBLHd3VfI7EbKIkFBdsqBn73bcPR2x2SVxoFLHdTnVDaIkkQwFxU4=w600-h480-s-no-gm?authuser=0"
+                            alt="Sweet Bites" class="card-img" loading="lazy">
+                        <div class="card-content">
+                            <h3>Sweet Bites</h3>
+                            <p class="card-text">Una explosión de sabor artesanal, texturas sublimes para derretirse en tu
+                                boca. Mini brownies, alfajores, galletas con chips y más.</p>
+                            <div class="card-footer">
+                                <a href="#" class="btn btn-primary btn-small">Ver más</a>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="card stagger-item">
+                        <img src="https://lh3.googleusercontent.com/pw/AP1GczMrYMxqNs6PTNlnKE36j4fWuan_Tb_0oGftFjh8EHiMNkzpzy21wA2-Am1nXenIkaqRYWIYEa51g5eyX0S7GloynvzmFnUDkfgHt_dxWDdkQ1di-ykry4L3njwk3Hl6igaZXCQ7MkDsEiKu3Yi4Ozpg=w1336-h878-s-no-gm?authuser=0"
+                            alt="Tortas artísticas" class="card-img" loading="lazy">
+                        <div class="card-content">
+                            <h3>Tortas artísticas</h3>
+                            <p class="card-text">Diseños exclusivos de acabados impecables y sabor sublime, detalles
+                                minuciosos y dulzura en cada bocado para celebraciones inolvidables.</p>
+                            <div class="card-footer">
+                                <a href="#" class="btn btn-primary btn-small">Ver más</a>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="card stagger-item">
+                        <img src="https://lh3.googleusercontent.com/pw/AP1GczOFYYAIdUNBrbzSPVjb2MptpWVqWonNyDbM34Zdj_rfrUkKVMJMZXG8slxm6SwZRT_PQZNSDI3dhEEJ6PFo0pwEWmY4EHE7-uJoEfni7ToLcfj-_1gHYYZmgqLt4lUGsS8NPdkcOo6CkmAektiCVys_=w976-h642-s-no-gm?authuser=0"
+                            alt="Galletas de mantequilla" class="card-img" loading="lazy">
+                        <div class="card-content">
+                            <h3>Galletas de mantequilla</h3>
+                            <p class="card-text">Elaboradas artesanalmente en mantequilla o jengibre para regalar una
+                                experiencia dulce inolvidable. Modelos personalizados con temáticas variadas.</p>
+                            <div class="card-footer">
+                                <a href="#" class="btn btn-primary btn-small">Ver más</a>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="card stagger-item">
+                        <img src="https://lh3.googleusercontent.com/pw/AP1GczPDuAZ8sfLkh34D6cBBc41gS1d_ymM5imCtqUKKt0LzKUqHJ64KJbZF7gMHTlHyXAfHzHr6Y2u7Xs149nDzM_9oAvYGiZWqNGw4XvfEbcp9LueZNoTQijZhxoLB6E3fJ9ui4J62FtG-54P1u4j81Z3z=w600-h480-s-no-gm?authuser=0"
+                            alt="Pack's de cumpleaños" class="card-img" loading="lazy">
+                        <div class="card-content">
+                            <h3>Pack's de cumpleaños</h3>
+                            <p class="card-text">¡Tu celebración merece perfección! Con diseños exclusivos y detalles
+                                impecables que deslumbran la vista y conquistan el paladar.</p>
+                            <div class="card-footer">
+                                <a href="#" class="btn btn-primary btn-small">Ver más</a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Nuestra Historia -->
+        <section class="our-story" id="nosotros">
+            <div class="shop-container">
+                <span class="section-tag fade-in-left">NUESTRA HISTORIA</span>
+                <h2 class="section-title fade-in-right">Una tradición de dulzura</h2>
+                <p class="section-desc fade-in">Comenzamos como un pequeño sueño familiar y hoy somos parte de las celebraciones más
+                    importantes de miles de familias.</p>
+                <div class="story-container">
+                    <div class="story-slider fade-in-left">
+                        <div class="slider-container" id="tradicionSlider">
+                            <div class="slide active" data-slide="1">
+                                <img src="https://lh3.googleusercontent.com/pw/AP1GczP1ofyR9Mp_fBAkCkOPoMBN8g4foUk21lnxiyZdBVEkWk4qiRbharT_SyZNVkmc53VB77UhMwBFSujB6N5L2ZfCjeWMgGAHRA3ahr7nvX15tUHx7jUM0BX4vsfmy_GusRdvA5B8T-Z6JOZ1R2NfWKAu=w1024-h1024-s-no-gm?authuser=0"
+                                    alt="Maestro pastelero" class="slide-img" loading="lazy">
+                                <div class="slide-content">
+                                    <h4 class="slide-title">Arte en cada detalle</h4>
+                                    <p class="slide-desc">Nuestros maestros pasteleros trabajan con precisión y creatividad</p>
+                                </div>
+                            </div>
+                            <div class="slide" data-slide="2">
+                                <img src="https://lh3.googleusercontent.com/pw/AP1GczP-Xf7orSWhTsMv0ulinuCw7wNUdVTUO9X11svSnCoWHXVxuafihgkK9DbAj91nF1d4B_w9bCv5Mj7TIeIDPgIGoJy_nKT1Q233plI5UOmUOYaCIa7LYTo9GU5n21dVOgaa7hIJ1j6cQ9dbBdpGWYls=w1024-h1024-s-no-gm?authuser=0"
+                                    alt="Ingredientes naturales" class="slide-img" loading="lazy">
+                                <div class="slide-content">
+                                    <h4 class="slide-title">Ingredientes Selectos</h4>
+                                    <p class="slide-desc">Solo utilizamos productos naturales de primera calidad</p>
+                                </div>
+                            </div>
+                            <div class="slide" data-slide="3">
+                                <img src="https://lh3.googleusercontent.com/pw/AP1GczOLxJ_E8eA8RxfkFPnbf5J6BSEiDRna2jfyxMospoV7ICP9rydSb3hUr1Bs5nzii0joXBfvrSgpHbpz1RkuNHvpUPvYVybTo64-E2g7SJkuXpoNOMjbxQuO8wZOIrfs9Xvv2KcFYObye8xV6JkV5pjt=w864-h822-s-no-gm?authuser=0"
+                                    alt="Proceso artesanal" class="slide-img" loading="lazy">
+                                <div class="slide-content">
+                                    <h4 class="slide-title">Técnica Artesanal</h4>
+                                    <p class="slide-desc">Cada pieza es elaborada a mano con técnicas tradicionales</p>
+                                </div>
+                            </div>
+                            <div class="slide" data-slide="4">
+                                <img src="https://lh3.googleusercontent.com/pw/AP1GczOxkuNuJMBSksL5qD0VMPGsHIVz_UJ5HxcjUlLJsUxWkHxzreFaFJP-OBQOlnNfKfzlSEEYScWmFvuak_Ufu5jaQR_9Vk5b6pdwNLZcmewNKVpkUq3N-3XDhxABoIW-zL4Xn5_744tFRiyKe1fNSgpO=w1024-h875-s-no-gm?authuser=0"
+                                    alt="Pastelería creativa" class="slide-img" loading="lazy">
+                                <div class="slide-content">
+                                    <h4 class="slide-title">Creatividad Moderna</h4>
+                                    <p class="slide-desc">Combinamos tradición con diseños contemporáneos</p>
+                                </div>
+                            </div>
+                            <div class="slide" data-slide="5">
+                                <img src="https://lh3.googleusercontent.com/pw/AP1GczOEtEGhPVoEiQ9PJtjDcAvK-9d0mEsK2l3Hrm-8XDGuZ5PvgqPyJaCj_jFA6uriLbsWMPeLGlRyJ8zyglAf1bYiKm7AC4kckZgcB7gL5XoGC9WrObVVFc8X8yeip3NfWEGMaKCC9yxaX6zK0nP3TkMj=w1024-h821-s-no-gm?authuser=0"
+                                    alt="Tradición familiar" class="slide-img" loading="lazy">
+                                <div class="slide-content">
+                                    <h4 class="slide-title">Tradición Familiar</h4>
+                                    <p class="slide-desc">25 años de experiencia transmitida de generación en generación</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slider-controls">
+                            <div class="slider-dots">
+                                <button class="slider-dot active" data-slide="1" aria-label="Ir a imagen 1"></button>
+                                <button class="slider-dot" data-slide="2" aria-label="Ir a imagen 2"></button>
+                                <button class="slider-dot" data-slide="3" aria-label="Ir a imagen 3"></button>
+                                <button class="slider-dot" data-slide="4" aria-label="Ir a imagen 4"></button>
+                                <button class="slider-dot" data-slide="5" aria-label="Ir a imagen 5"></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="story-content fade-in-right">
+                        <div class="story-features">
+                            <div class="feature-item stagger-item">
+                                <div class="feature-icon"><i class="fas fa-heart"></i></div>
+                                <div class="feature-text">
+                                    <h4>Hecho con Amor</h4>
+                                    <p>Cada pastel es creado con pasión y dedicación artesanal.</p>
+                                </div>
+                            </div>
+                            <div class="feature-item stagger-item">
+                                <div class="feature-icon"><i class="fas fa-award"></i></div>
+                                <div class="feature-text">
+                                    <h4>5 Años de Experiencia</h4>
+                                    <p>Tradición pastelera transmitida de generación en generación.</p>
+                                </div>
+                            </div>
+                            <div class="feature-item stagger-item">
+                                <div class="feature-icon"><i class="fas fa-leaf"></i></div>
+                                <div class="feature-text">
+                                    <h4>Ingredientes Frescos</h4>
+                                    <p>Solo utilizamos productos naturales y de primera calidad.</p>
+                                </div>
+                            </div>
+                            <div class="feature-item stagger-item">
+                                <div class="feature-icon"><i class="fas fa-clock"></i></div>
+                                <div class="feature-text">
+                                    <h4>Recién Horneado</h4>
+                                    <p>Preparamos todo el día para garantizar la máxima frescura.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="stats scale-in">
+                            <div class="stat-item">
+                                <div class="stat-number">+500</div>
+                                <div class="stat-label">Clientes Felices</div>
+                            </div>
+                            <div class="stat-item">
+                                <div class="stat-number">5</div>
+                                <div class="stat-label">Años de Tradición</div>
+                            </div>
+                            <div class="stat-item">
+                                <div class="stat-number">100%</div>
+                                <div class="stat-label">Artístico</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contacto -->
+        <section class="contact" id="contacto">
+            <div class="shop-container">
+                <div class="contact-header">
+                    <span class="section-tag fade-in">Conéctate con nosotros</span>
+                    <h2 class="section-title fade-in">CONTÁCTANOS</h2>
+                    <p class="section-desc fade-in">¿Tienes un evento especial? Contáctanos y crearemos el pastel perfecto para ti.
+                    </p>
+                </div>
+                <div class="contact-main-container">
+                    <div class="contact-left-column">
+                        <div class="contact-card location-card fade-in-left stagger-item">
+                            <div class="circle-icon"><i class="fas fa-map-marker-alt"></i></div>
+                            <h4 class="card-subtitle">Ubicación</h4>
+                            <p class="card-detail">Santa Anita, Lima<br>El Agustino, Lima</p>
+                        </div>
+                        <div class="contact-card phone-card fade-in-left stagger-item">
+                            <div class="circle-icon"><i class="fas fa-phone-alt"></i></div>
+                            <h4 class="card-subtitle">Teléfono</h4>
+                            <p class="card-detail">+51 987 645 268</p>
+                        </div>
+                        <div class="contact-card email-card fade-in-left stagger-item">
+                            <div class="circle-icon"><i class="fas fa-envelope"></i></div>
+                            <h4 class="card-subtitle">Email</h4>
+                            <p class="card-detail">dulcefantasiaoficial@gmail.com</p>
+                        </div>
+                    </div>
+                    <div class="map-right-column">
+                        <div class="map-container-full fade-in-right">
+                            <iframe
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d975.4872216233236!2d-76.9777598303749!3d-12.04703788769261!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105c67067228dfb%3A0xe709563be46c323c!2sMolles%20104%2C%20Lima%2015008!5e0!3m2!1ses!2spe!4v1770849336039!5m2!1ses!2spe"
+                                width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+                                referrerpolicy="no-referrer-when-downgrade"
+                                title="Ubicación de Dulce Fantasía Bakery"></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- CONTENIDO 2 (Tienda con Filtros) -->
+    <div id="content-002" class="content-002" style="display: none;">
+        <!-- MAIN CONTENT CON FILTROS Y SHOP LADO A LADO -->
+        <div class="main-content">
+            <!-- FILTROS SECTION (IZQUIERDA) -->
+            <section class="filters-section" id="filtersSection">
+                <div class="filters-header">
+                    <h3>Filtros</h3>
+                    <button class="toggle-filters" id="toggleFilters" aria-label="Toggle filters">
+                        <i class="fa-solid fa-angles-left" id="toggleIcon"></i>
+                    </button>
+                </div>
+                <div class="filters-container">
+                    <div class="filter-group">
+                        <!-- BUSCADOR CON LUPA -->
+                        <div class="search-box">
+                            <i class="fas fa-search"></i>
+                            <input type="text" class="search-input" id="searchInput" placeholder="buscar postre">
+                        </div>
+                        <select class="filter-select" id="sortSelect">
+                            <option value="default">Ordenar por defecto</option>
+                            <option value="price-asc">Precio: menor a mayor</option>
+                            <option value="price-desc">Precio: mayor a menor</option>
+                            <option value="name-asc">Nombre: A a Z</option>
+                            <option value="name-desc">Nombre: Z a A</option>
+                        </select>
+                    </div>
+                    <div class="filter-group">
+                        <button class="filter-btn active" data-filter="all">
+                            <i class="fas fa-th-large"></i>
+                            <span class="btn-text">Todos</span>
+                        </button>
+                        <button class="filter-btn" data-filter="Mujer">
+                            <i class="fa-solid fa-person-pregnant"></i>
+                            <span class="btn-text">Mujer</span>
+                        </button>
+                        <button class="filter-btn" data-filter="Love">
+                            <i class="fas fa-heart"></i>
+                            <span class="btn-text">Love</span>
+                        </button>
+                        <button class="filter-btn" data-filter="Temáticas">
+                            <i class="fas fa-cake"></i>
+                            <span class="btn-text">Temáticas</span>
+                        </button>
+                        <button class="filter-btn" data-filter="Deportes">
+                            <i class="fa-regular fa-futbol"></i>
+                            <span class="btn-text">Deportes</span>
+                        </button>
+                        <button class="filter-btn" data-filter="Individuales">
+                            <i class="fa-solid fa-cookie-bite"></i>
+                            <span class="btn-text">Individuales</span>
+                        </button>
+                        <button class="filter-btn" data-filter="Niños">
+                            <i class="fa-solid fa-child"></i>
+                            <span class="btn-text">Niños</span>
+                        </button>
+                        <button class="filter-btn" data-filter="Niñas">
+                            <i class="fa-solid fa-child-dress"></i>
+                            <span class="btn-text">Niñas</span>
+                        </button>
+                        <button class="filter-btn" data-filter="Mamá">
+                            <i class="fa-solid fa-person-pregnant"></i>
+                            <span class="btn-text">Mamá</span>
+                        </button>
+                        <button class="filter-btn" data-filter="Pack">
+                            <i class="fa-solid fa-candy-cane"></i>
+                            <span class="btn-text">Pack's</span>
+                        </button>
+                        <button class="filter-btn" data-filter="Halloween">
+                            <i class="fa-solid fa-ghost"></i>
+                            <span class="btn-text">Halloween</span>
+                        </button>
+                        <button class="filter-btn" data-filter="Graduación">
+                            <i class="fa-solid fa-graduation-cap"></i>
+                            <span class="btn-text">Graduación</span>
+                        </button>
+                        <button class="filter-btn" data-filter="Navidad">
+                            <i class="fa-solid fa-tree"></i>
+                            <span class="btn-text">Navidad</span>
+                        </button>
+                        <button class="filter-btn" data-filter="Religioso">
+                            <i class="fa-solid fa-cross"></i>
+                            <span class="btn-text">Religioso</span>
+                        </button>
+                        <button class="filter-btn" data-filter="Casual">
+                            <i class="fa-solid fa-cake-candles"></i>
+                            <span class="btn-text">Casual</span>
+                        </button>
+                    </div>
+                </div>
+            </section>
+
+            <!-- SHOP SECTION (DERECHA) -->
+            <section class="shop-content" id="shop2">
+                <div class="shop-container">
+                    <div class="products-grid" id="productsGrid">
+                        <!-- Los productos se generarán aquí mediante JavaScript -->
+                        <div style="grid-column: 1/-1; text-align: center; padding: 50px;">
+                            <i class="fas fa-spinner fa-spin" style="font-size: 2rem; color: var(--primary-pink);"></i>
+                            <p>Cargando productos desde ...</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Loader para carga infinita -->
+                    <div class="loader-container" id="loaderContainer">
+                        <div class="loader"></div>
+                        <p style="margin-top: 15px; color: var(--primary-pink);">Cargando más productos...</p>
+                    </div>
+                    
+                    <!-- Mensaje de final de productos -->
+                    <div class="end-message" id="endMessage">
+                        <i class="fas fa-check-circle" style="font-size: 2rem; color: var(--primary-pink); opacity: 0.5;"></i>
+                        <p>¡Has visto todos los productos disponibles!</p>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+
+    <!-- MODAL CON PERSONALIZACIÓN (Compartido) -->
+    <div id="productModal" class="modal">
+        <div class="modal-content">
+            <button class="close-modal-improved" id="closeBtn">&times;</button>
+            <div class="modal-image-container">
+                <img id="modalProductImage" src="" alt="Producto">
+            </div>
+            <div class="modal-info-container">
+                <h2 id="modalProductTitle" class="modal-product-title"></h2>
+                <div id="modalProductPrice" class="modal-product-price"></div>
+                <p id="modalProductDescription" class="modal-product-description"></p>
+
+                <!-- SELECT DE TAMAÑO -->
+                <div class="customization-section">
+                    <h4><i class="fas fa-arrows-alt"></i> Tamaño</h4>
+                    <select id="tamanoSelect" class="customization-select">
+                        <option value="">Selecciona una opción</option>
+                    </select>
+                </div>
+
+                <!-- SELECT DE SABOR DE KEKE -->
+                <div class="customization-section">
+                    <h4><i class="fas fa-cake"></i> Sabor de Keke</h4>
+                    <select id="kekeSelect" class="customization-select">
+                        <option value="">Selecciona una opción</option>
+                    </select>
+                </div>
+
+                <!-- SELECT DE SABOR DE RELLENO -->
+                <div class="customization-section">
+                    <h4><i class="fas fa-cream"></i> Sabor de Relleno</h4>
+                    <select id="rellenoSelect" class="customization-select">
+                        <option value="">Selecciona una opción</option>
+                    </select>
+                </div>
+
+                <!-- SELECT DE ADICIONALES -->
+                <div class="customization-section">
+                    <h4><i class="fas fa-candle"></i> Adicionales</h4>
+                    <select id="adicionalSelect" class="customization-select">
+                        <option value="">Selecciona una opción</option>
+                    </select>
+                </div>
+
+                <div class="modal-product-details">
+                    <h4><i class="fas fa-check-circle"></i> Detalles del producto</h4>
+                    <ul id="modalProductDetailsList"></ul>
+                </div>
+
+                <div class="modal-total-price">
+                    <span>Total:</span>
+                    <span id="modalTotalPrice">s/0.00</span>
+                </div>
+
+                <div class="modal-buttons">
+                    <a href="#" class="btn btn-primary" id="modalAddToCart"><i class="fas fa-shopping-cart"></i> Añadir al carrito</a>
+                    <a href="https://wa.me/51987645268" target="_blank" class="btn btn-wts" id="modalWhatsApp"><i class="fab fa-whatsapp"></i> Consultar</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- CARRITO DE COMPRAS -->
+    <div class="cart-overlay" id="cartOverlay"></div>
+    <div class="cart-sidebar" id="cartSidebar">
+        <div class="cart-header">
+            <h3><i class="fas fa-shopping-cart"></i> Mi Carrito</h3>
+            <button class="close-cart" id="closeCartBtn"><i class="fas fa-times"></i></button>
+        </div>
+        <div class="cart-items-container" id="cartItemsContainer">
+            <div class="empty-cart-message">
+                <i class="fas fa-shopping-basket"></i>
+                <p>Tu carrito está vacío</p>
+                <small style="display: block; margin-top: 10px; opacity: 0.7;">¡Agrega algunos productos deliciosos!</small>
+            </div>
+        </div>
+        <div class="cart-footer" id="cartFooter" style="display: none;">
+            <div class="cart-total">
+                <span>Total:</span>
+                <span id="cartTotalAmount">s/0.00</span>
+            </div>
+            <div class="cart-buttons">
+                <a href="https://wa.me/51987645268" target="_blank" class="btn btn-wts" id="cartWhatsAppBtn"><i class="fab fa-whatsapp"></i> Pedir por WhatsApp</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-column logo-column">
+                <a href="#inicio" class="footer-logo" id="footerHomeLogo">
+                    <div class="logo-icon"><i class="fas fa-birthday-cake"></i></div>
+                    <span>Dulce Fantasía Bakery</span>
+                </a>
+                <p class="footer-description">Pastelería artística desde 2020. Creamos dulzura con amor para hacer de
+                    tus momentos algo inolvidable. Cada creación es única y especial.</p>
+                <div class="social-links">
+                    <a href="https://www.instagram.com/dulcefantasiaoficial/" class="social-link" target="_blank"
+                        aria-label="Síguenos en Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.facebook.com/DulceFantasiaOficialCakeShop" class="social-link" target="_blank"
+                        aria-label="Síguenos en Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://www.pinterest.com/dulcefantasiaoficial/" class="social-link" target="_blank"
+                        aria-label="Síguenos en Pinterest"><i class="fab fa-pinterest-p"></i></a>
+                    <a href="https://sites.google.com/view/dulcefantasiacakeshop" class="social-link" target="_blank"
+                        aria-label="Visita nuestra página web"><i class="fab fa-google"></i></a>
+                </div>
+            </div>
+            <div class="footer-column">
+                <h4 class="footer-title">Información</h4>
+                <a class="footer-legal"
+                    href="https://sites.google.com/view/dulcefantasiacakeshop/terminos-y-condiciones"
+                    target="_blank">Términos y condiciones</a>
+                <a class="footer-legal"
+                    href="https://sites.google.com/view/dulcefantasiacakeshop/politicas-de-privacidad"
+                    target="_blank">Políticas de privacidad</a>
+                <a class="footer-legal" href="https://sites.google.com/view/dulcefantasiacakeshop/envios-y-devoluciones"
+                    target="_blank">Envíos y devoluciones</a>
+                <a class="footer-legal" href="https://sites.google.com/view/dulcefantasiacakeshop/preguntas-frecuentes"
+                    target="_blank">Preguntas frecuentes</a>
+            </div>
+            <div class="footer-column">
+                <h4 class="footer-title">Horario</h4>
+                <ul class="footer-schedule">
+                    <li><span class="day">Lun - Vie:</span><span class="time">8:00-20:00</span></li>
+                    <li><span class="day">Sábado:</span><span class="time">9:00-20:00</span></li>
+                    <li><span class="day">Domingo:</span><span class="time">9:00-14:00</span></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h4 class="footer-title">Mantente al día</h4>
+                <p class="footer-description">Únete a nuestra comunidad de WhatsApp para recibir novedades y ofertas
+                    especiales.</p>
+                <a href="https://wa.me/51987645268" target="_blank" class="btn btn-primary btn-small btn-wts"
+                    style="width: 100%;"><i class="fab fa-whatsapp"></i>ÚNETE AQUÍ</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="footer-bottom-container">
+                <p class="copyright">© 2024 Dulce Fantasía Bakery. Todos los derechos reservados.</p>
+                <p class="copyright">Hecho con <i class="fas fa-heart" style="color: var(--primary-pink);"></i> en Lima
+                    - Perú</p>
+            </div>
+        </div>
+    </footer>    
+    <script src="./javascript.js"></script>
+    </body>
+
+</html>
+
