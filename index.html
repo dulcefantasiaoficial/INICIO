@@ -342,7 +342,6 @@
 
     <!-- CONTENIDO 2 (Tienda con Filtros) -->
     <div id="content-002" class="content-002" style="display: none;">
-        <!-- MAIN CONTENT CON FILTROS Y SHOP LADO A LADO -->
         <div class="main-content">
             <!-- FILTROS SECTION (IZQUIERDA) -->
             <section class="filters-section" id="filtersSection">
@@ -354,7 +353,6 @@
                 </div>
                 <div class="filters-container">
                     <div class="filter-group">
-                        <!-- BUSCADOR CON LUPA -->
                         <div class="search-box">
                             <i class="fas fa-search"></i>
                             <input type="text" class="search-input" id="searchInput" placeholder="buscar postre">
@@ -367,18 +365,15 @@
                             <option value="name-desc">Nombre: Z a A</option>
                         </select>
                     </div>
-                    <div class="filter-group">
+                    <div class="filter-group" id="filtrosPrincipales">
+                        <!-- PRIMEROS 10 BOTONES -->
                         <button class="filter-btn active" data-filter="all">
                             <i class="fas fa-th-large"></i>
                             <span class="btn-text">Todos</span>
                         </button>
-                        <button class="filter-btn" data-filter="Mujer">
-                            <i class="fa-solid fa-person-pregnant"></i>
-                            <span class="btn-text">Mujer</span>
-                        </button>
-                        <button class="filter-btn" data-filter="Love">
+                        <button class="filter-btn" data-filter="San Valentín">
                             <i class="fas fa-heart"></i>
-                            <span class="btn-text">Love</span>
+                            <span class="btn-text">San Valentín</span>
                         </button>
                         <button class="filter-btn" data-filter="Temáticas">
                             <i class="fas fa-cake"></i>
@@ -388,10 +383,6 @@
                             <i class="fa-regular fa-futbol"></i>
                             <span class="btn-text">Deportes</span>
                         </button>
-                        <button class="filter-btn" data-filter="Individuales">
-                            <i class="fa-solid fa-cookie-bite"></i>
-                            <span class="btn-text">Individuales</span>
-                        </button>
                         <button class="filter-btn" data-filter="Niños">
                             <i class="fa-solid fa-child"></i>
                             <span class="btn-text">Niños</span>
@@ -400,33 +391,77 @@
                             <i class="fa-solid fa-child-dress"></i>
                             <span class="btn-text">Niñas</span>
                         </button>
-                        <button class="filter-btn" data-filter="Mamá">
-                            <i class="fa-solid fa-person-pregnant"></i>
-                            <span class="btn-text">Mamá</span>
-                        </button>
                         <button class="filter-btn" data-filter="Pack">
                             <i class="fa-solid fa-candy-cane"></i>
                             <span class="btn-text">Pack's</span>
                         </button>
-                        <button class="filter-btn" data-filter="Halloween">
-                            <i class="fa-solid fa-ghost"></i>
-                            <span class="btn-text">Halloween</span>
+                        <button class="filter-btn" data-filter="Matrimonio">
+                            <i class="fa-solid fa-face-grin-hearts"></i>
+                            <span class="btn-text">Matrimonio</span>
                         </button>
                         <button class="filter-btn" data-filter="Graduación">
                             <i class="fa-solid fa-graduation-cap"></i>
                             <span class="btn-text">Graduación</span>
                         </button>
-                        <button class="filter-btn" data-filter="Navidad">
-                            <i class="fa-solid fa-tree"></i>
-                            <span class="btn-text">Navidad</span>
-                        </button>
                         <button class="filter-btn" data-filter="Religioso">
                             <i class="fa-solid fa-cross"></i>
                             <span class="btn-text">Religioso</span>
                         </button>
-                        <button class="filter-btn" data-filter="Casual">
+
+                        <!-- BOTONES EXTRAS -->
+                        <button class="filter-btn extra-btn" data-filter="Vitrina">
+                            <i class="fa-solid fa-cake-candles"></i>
+                            <span class="btn-text">Vitrina</span>
+                        </button>
+                        <button class="filter-btn extra-btn" data-filter="Mariposas">
+                            <i class="fa-solid fa-cake-candles"></i>
+                            <span class="btn-text">Mariposas</span>
+                        </button>
+                        <button class="filter-btn extra-btn" data-filter="Flores">
+                            <i class="fa-solid fa-clover"></i>
+                            <span class="btn-text">Flores</span>
+                        </button>
+                        <button class="filter-btn extra-btn" data-filter="Catering">
+                            <i class="fa-solid fa-cheese"></i>
+                            <span class="btn-text">Catering</span>
+                        </button>
+                        <button class="filter-btn extra-btn" data-filter="Mamá">
+                            <i class="fa-solid fa-person-pregnant"></i>
+                            <span class="btn-text">Mamá</span>
+                        </button>
+                        <button class="filter-btn extra-btn" data-filter="Halloween">
+                            <i class="fa-solid fa-ghost"></i>
+                            <span class="btn-text">Halloween</span>
+                        </button>
+                        <button class="filter-btn extra-btn" data-filter="Navidad">
+                            <i class="fa-solid fa-tree"></i>
+                            <span class="btn-text">Navidad</span>
+                        </button>
+                        <button class="filter-btn extra-btn" data-filter="Baby Shower">
+                            <i class="fa-solid fa-baby"></i>
+                            <span class="btn-text">Baby Shower</span>
+                        </button>
+                        <button class="filter-btn extra-btn" data-filter="Mujer">
+                            <i class="fa-solid fa-person-pregnant"></i>
+                            <span class="btn-text">Mujer</span>
+                        </button>
+                        <button class="filter-btn extra-btn" data-filter="Individuales">
+                            <i class="fa-solid fa-cookie-bite"></i>
+                            <span class="btn-text">Individuales</span>
+                        </button>
+                        <button class="filter-btn extra-btn" data-filter="Casual">
                             <i class="fa-solid fa-cake-candles"></i>
                             <span class="btn-text">Casual</span>
+                        </button>
+                        <button class="filter-btn extra-btn" data-filter="Adultos">
+                            <i class="fa-solid fa-martini-glass"></i>
+                            <span class="btn-text">Adultos</span>
+                        </button>
+                        
+                        <!-- BOTÓN VER MÁS / VER MENOS -->
+                        <button class="toggle-more-btn" id="toggleMoreBtn">
+                            <span id="toggleMoreText">Ver más</span>
+                            <i class="fas fa-chevron-down" id="toggleMoreIcon"></i>
                         </button>
                     </div>
                 </div>
@@ -436,20 +471,17 @@
             <section class="shop-content" id="shop2">
                 <div class="shop-container">
                     <div class="products-grid" id="productsGrid">
-                        <!-- Los productos se generarán aquí mediante JavaScript -->
                         <div style="grid-column: 1/-1; text-align: center; padding: 50px;">
                             <i class="fas fa-spinner fa-spin" style="font-size: 2rem; color: var(--primary-pink);"></i>
                             <p>Cargando productos desde ...</p>
                         </div>
                     </div>
                     
-                    <!-- Loader para carga infinita -->
                     <div class="loader-container" id="loaderContainer">
                         <div class="loader"></div>
                         <p style="margin-top: 15px; color: var(--primary-pink);">Cargando más productos...</p>
                     </div>
                     
-                    <!-- Mensaje de final de productos -->
                     <div class="end-message" id="endMessage">
                         <i class="fas fa-check-circle" style="font-size: 2rem; color: var(--primary-pink); opacity: 0.5;"></i>
                         <p>¡Has visto todos los productos disponibles!</p>
@@ -459,7 +491,7 @@
         </div>
     </div>
 
-    <!-- MODAL CON PERSONALIZACIÓN (Compartido) -->
+    <!-- MODAL CON PERSONALIZACIÓN -->
     <div id="productModal" class="modal">
         <div class="modal-content">
             <button class="close-modal-improved" id="closeBtn">&times;</button>
@@ -471,7 +503,6 @@
                 <div id="modalProductPrice" class="modal-product-price"></div>
                 <p id="modalProductDescription" class="modal-product-description"></p>
 
-                <!-- SELECT DE TAMAÑO -->
                 <div class="customization-section">
                     <h4><i class="fas fa-arrows-alt"></i> Tamaño</h4>
                     <select id="tamanoSelect" class="customization-select">
@@ -479,7 +510,6 @@
                     </select>
                 </div>
 
-                <!-- SELECT DE SABOR DE KEKE -->
                 <div class="customization-section">
                     <h4><i class="fas fa-cake"></i> Sabor de Keke</h4>
                     <select id="kekeSelect" class="customization-select">
@@ -487,7 +517,6 @@
                     </select>
                 </div>
 
-                <!-- SELECT DE SABOR DE RELLENO -->
                 <div class="customization-section">
                     <h4><i class="fas fa-cream"></i> Sabor de Relleno</h4>
                     <select id="rellenoSelect" class="customization-select">
@@ -495,7 +524,6 @@
                     </select>
                 </div>
 
-                <!-- SELECT DE ADICIONALES -->
                 <div class="customization-section">
                     <h4><i class="fas fa-candle"></i> Adicionales</h4>
                     <select id="adicionalSelect" class="customization-select">
