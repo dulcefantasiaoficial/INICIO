@@ -1541,3 +1541,34 @@ async function loadProductsFromSheets() {
             
             console.log('Dulce Fantasía Bakery - Cargado correctamente con Google Sheets y doble contenido');
         });
+
+// ===== PREGUNTAS FRECUENTES =====
+document.addEventListener('DOMContentLoaded', function () {
+    // Seleccionar todos los elementos de pregunta
+    const faqItems = document.querySelectorAll('.faq-item');
+
+    // Agregar evento click a cada pregunta
+    faqItems.forEach(item => {
+        const question = item.querySelector('.faq-question');
+
+        question.addEventListener('click', () => {
+            // Si el item clickeado ya está activo, solo lo cerramos
+            if (item.classList.contains('active')) {
+                item.classList.remove('active');
+            } else {
+                // Cerrar todos los otros items abiertos
+                faqItems.forEach(otherItem => {
+                    if (otherItem !== item && otherItem.classList.contains('active')) {
+                        otherItem.classList.remove('active');
+                    }
+                });
+
+                // Abrir el item clickeado
+                item.classList.add('active');
+            }
+        });
+    });
+
+    // Opcional: Abrir la primera pregunta por defecto
+    faqItems[0].classList.add('active');
+});
