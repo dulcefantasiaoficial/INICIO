@@ -1340,9 +1340,9 @@
             padding: 20px 10px;
         }
 
-        .filters-section.collapsed .filter-group .filter-btn .btn-text,
         .filters-section.collapsed .filter-group .filter-select,
-        .filters-section.collapsed .search-box {
+        .filters-section.collapsed .search-box,
+        .filters-section.collapsed .toggle-more-btn {
             display: none;
         }
 
@@ -1363,7 +1363,47 @@
         .filters-section.collapsed .filters-header {
             justify-content: center;
         }
+        /* Tooltip para botones en estado colapsado */
+        .filters-section.collapsed .filter-group .filter-btn {
+            position: relative;
+        }
 
+        .filters-section.collapsed .filter-group .filter-btn .btn-text {
+            position: absolute;
+            left: 100%;
+            top: 50%;
+            transform: translateY(-50%) translateX(-10px);
+            white-space: nowrap;
+            background: rgba(0, 0, 0, 0.8);
+            color: white;
+            padding: 5px 10px;
+            border-radius: 4px;
+            margin-left: 10px;
+            opacity: 0;
+            visibility: hidden;
+            transition: all 0.3s ease;
+            z-index: 9999;
+            pointer-events: none;
+            font-size: 0.85rem;
+            display: block;
+        }
+
+        .filters-section.collapsed .filter-group .filter-btn:hover .btn-text {
+            opacity: 1;
+            visibility: visible;
+            transform: translateY(-50%) translateX(0);
+        }
+
+        .filters-section.collapsed .filter-group .filter-btn .btn-text::before {
+            content: '';
+            position: absolute;
+            right: 100%;
+            top: 50%;
+            transform: translateY(-50%);
+            border-width: 5px;
+            border-style: solid;
+            border-color: transparent rgba(0, 0, 0, 0.8) transparent transparent;
+        }
         .filters-header {
             display: flex;
             justify-content: space-between;
