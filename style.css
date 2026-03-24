@@ -7,6 +7,7 @@
             --accent-pink: #f4c2cc;
             --light-pink: #fceef2;
             --white: #ffffff;
+                
             --whatsapp-green: #25D366;
             --shadow-light: 0 10px 30px rgba(217, 142, 163, 0.1);
             --shadow-medium: 0 15px 30px rgba(74, 50, 44, 0.1);
@@ -2703,9 +2704,9 @@
                 flex-direction: column;
             }
 
-            .cart-sidebar {
+            /*.cart-sidebar {
                 max-width: 100%;
-            }
+            }*/
 
             .customization-section {
                 padding: 12px 15px;
