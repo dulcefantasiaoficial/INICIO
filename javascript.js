@@ -83,6 +83,29 @@ function showContent(contentNumber) {
     }
 }
 
+// ===== FUNCIÓN PARA EXPANDIR LAS OPCINES DE LOS FILTROS - TIENDA  =====
+        function setupToggleMore() {
+            toggleMoreBtn?.addEventListener('click', () => {
+                const isExpanded = filtrosPrincipales?.classList.contains('expanded');
+                
+                if (isExpanded) {
+                    filtrosPrincipales?.classList.remove('expanded');
+                    if (toggleMoreText) toggleMoreText.textContent = 'Ver más';
+                    if (toggleMoreIcon) {
+                        toggleMoreIcon.classList.remove('fa-chevron-up');
+                        toggleMoreIcon.classList.add('fa-chevron-down');
+                    }
+                } else {
+                    filtrosPrincipales?.classList.add('expanded');
+                    if (toggleMoreText) toggleMoreText.textContent = 'Ver menos';
+                    if (toggleMoreIcon) {
+                        toggleMoreIcon.classList.remove('fa-chevron-down');
+                        toggleMoreIcon.classList.add('fa-chevron-up');
+                    }
+                }
+            });
+        }
+
         // ===== FUNCIÓN PARA EXTRAER PRECIO DE UN TEXTO =====
         function extractPriceFromText(text) {
             if (!text) return 0;
@@ -1535,6 +1558,7 @@ async function loadProductsFromSheets() {
             setupInfiniteScroll();
             setupSearch();
             setupFiltersToggle();
+            setupToggleMore();
             
             // Mostrar contenido 1 por defecto
             showContent(1);
