@@ -1548,6 +1548,51 @@
             color: var(--white);
         }
 
+        /* Estilos para el botón Ver más / Ver menos */
+        .toggle-more-btn {
+            background: transparent;
+            border: 2px dashed var(--primary-pink);
+            color: var(--primary-pink);
+            padding: 10px;
+            border-radius: var(--border-radius-lg);
+            font-weight: 600;
+            font-size: 0.9rem;
+            cursor: pointer;
+            transition: var(--transition-normal);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            width: 100%;
+            margin-top: 5px;
+        }
+
+        .toggle-more-btn:hover {
+            background: var(--primary-pink);
+            color: var(--white);
+            border: 2px solid var(--primary-pink-dark);
+            transform: translateY(-2px);
+            box-shadow: var(--shadow-light);
+        }
+
+        .toggle-more-btn i {
+            font-size: 0.8rem;
+            transition: transform 0.3s ease;
+        }
+
+        .toggle-more-btn:hover i {
+            transform: translateX(3px);
+        }
+
+        /* Botones ocultos inicialmente */
+        .filter-btn.extra-btn {
+            display: none;
+        }
+
+        .filter-group.expanded .filter-btn.extra-btn {
+            display: flex;
+        }
+
         .filter-select {
             padding: 12px 15px;
             border: 2px solid var(--light-pink);
