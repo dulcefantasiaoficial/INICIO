@@ -278,7 +278,7 @@
 
         header.scrolled {
             padding: 15px 8%;
-            backdrop-filter: blur(10px);
+            /*backdrop-filter: blur(10px);*/
             background-color: rgba(253, 248, 244, 0.95);
             height: var(--header-height-scrolled);
         }
