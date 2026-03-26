@@ -1561,7 +1561,7 @@ async function loadProductsFromSheets() {
             setupToggleMore();
             
             // Mostrar contenido 1 por defecto
-            showContent(1);
+            showContent(2);
             
             console.log('Dulce Fantasía Bakery - Cargado correctamente con Google Sheets y doble contenido');
         });
