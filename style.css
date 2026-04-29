@@ -2050,6 +2050,7 @@
 
         .footer-schedule {
             list-style: none;
+            padding: 0;
         }
 
         .footer-schedule li {
@@ -2092,6 +2093,203 @@
             font-size: 0.9rem;
         }
 
+       .legal {
+    padding: var(--section-padding);
+    background-color: var(--white);
+    text-align: center;
+}
+.class-legal {
+    max-width: 1000px;
+    margin: auto;
+}
+.section-legal {
+    font-family: 'Playfair Display', serif;
+    font-size: 2rem;
+    color: var(--dark-text);
+    margin-bottom: 35px;
+}
+.section-legal-p {
+    max-width: 1000px;
+    margin: 0 auto 50px;
+    color: var(--dark-text);
+    opacity: 0.7;
+    font-size: 1rem;
+    text-align: justify;
+}
+.legal h4 {
+    text-align: left;
+    margin-bottom: 15px;
+}
+.section-legal-p table {
+    max-width: 85%;
+    margin: auto;
+    text-align: center;
+    border-collapse: collapse;
+}
+.faq-intro {
+    border-bottom: 2px solid var(--light-pink);
+    padding-bottom: 30px;
+    max-width: 95%;
+    margin: auto;
+}
+.faq-accordion {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px var(--light-pink);
+    overflow: hidden;
+    max-width: 85%;
+    margin: 35px auto;
+    text-align: left;
+}
+.faq-item {
+    border-bottom: 1px solid #eee;
+    transition: all 0.3s ease;
+}
+.faq-item.active .faq-question {
+    background-color: var(--light-pink);
+}
+.faq-question {
+    padding: 22px 25px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--white);
+    transition: background-color 0.3s ease;
+}
+.faq-question h3 {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: var(--dark-text);
+    opacity: 0.7;
+    margin: 0;
+    flex: 1;
+    transition: color 0.3s ease;
+}
+.fa-solid, .fas {
+    font-weight: 900;
+}
+.fa-check:before {
+    content: "\f00c";
+}
+.faq-icon {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: var(--primary-pink-dark);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+}
+.faq-icon i {
+    font-size: 0.9rem;
+    color: var(--white);
+    transition: all 0.3s ease;
+}
+.fa-chevron-down:before {
+    content: "\f078";
+}
+.faq-item.active .faq-answer {
+    max-height: 1000px;
+    padding: 0 25px 25px 25px;
+}
+.faq-answer {
+    max-height: 0;
+    overflow: hidden;
+    padding: 0 25px;
+    transition: all 0.4s ease;
+    background-color: var(--light-pink);
+    opacity: 0.7;
+}
+.faq-answer p {
+    margin-bottom: 15px;
+    color: var(--dark-text);
+    line-height: 1.7;
+}
+ul {
+    display: block;
+    list-style-type: disc;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    padding-inline-start: 40px;
+    unicode-bidi: isolate;
+}
+.section-legal-p ul li {
+    margin-bottom: 5px;
+}
+li {
+    display: list-item;
+    unicode-bidi: isolate;
+    list-style-position: inside;
+}
+.faq-answer ul, .faq-answer ol {
+    padding-left: 20px;
+    margin-bottom: 15px;
+}
+.faq-answer li {
+    margin-bottom: 8px;
+    color: var(--dark-text);
+}
+::marker {
+    unicode-bidi: isolate;
+    font-variant-numeric: tabular-nums;
+    text-transform: none;
+    text-indent: 0px !important;
+    text-align: start !important;
+    text-align-last: auto !important;
+}
+.section-legal-p table {
+    max-width: 85%;
+    margin: auto;
+    text-align: center;
+    border-collapse: collapse;
+}
+table {
+    border-collapse: separate;
+    text-indent: initial;
+    line-height: normal;
+    font-weight: normal;
+    font-size: medium;
+    font-style: normal;
+    color: -internal-quirk-inherit;
+    text-align: start;
+    border-spacing: 2px;
+    white-space: normal;
+    font-variant: normal;
+}
+thead {
+    display: table-header-group;
+    vertical-align: middle;
+    unicode-bidi: isolate;
+    border-color: inherit;
+}
+tr {
+    display: table-row;
+    vertical-align: inherit;
+    unicode-bidi: isolate;
+    border-color: inherit;
+}
+.section-legal-p th {
+    background-color: #f2f2f2;
+    text-align: center;
+}
+th {
+    display: table-cell;
+    vertical-align: inherit;
+    font-weight: bold;
+    text-align: -internal-center;
+    unicode-bidi: isolate;
+}
+.section-legal-p td {
+    padding: 10px;
+}
+.btn-whatsapp{
+    padding: 8px 20px !important;
+    font-size: 0.85rem !important;
+    background-color: var(--primary-pink) !important;
+    color: var(--white) !important;
+}
         /* ===== RESPONSIVE ===== */
         @media (max-width: 1200px) {
 
